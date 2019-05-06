@@ -1,0 +1,37 @@
+<?php
+
+require ('CloneType.php');
+
+class CloneMaker
+{
+    private $id;
+    private $currentClone;
+}
+
+class Clones
+{
+    private $id;
+}
+
+$clone = new Clones(
+    new CloneType(
+        'EZIAOEAZ',
+        'White',
+        'gun'
+    )
+);
+
+$maker = new CloneMaker();
+$maker->setCurrentClone($clone);
+
+$clone1 = new CloneType(
+    'EZIAOEAZ',
+    'White',
+    'gun'
+);
+
+$clone2 = new CloneType(
+    'EZIAOEAZ',
+    'White',
+    'gun'
+);
